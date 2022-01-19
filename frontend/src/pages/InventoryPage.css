@@ -1,0 +1,43 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.form-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.csv-button {
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color:white;
+  font-weight: bold;
+  background-color:darkturquoise;
+}
+
+.csv-button hover{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 20px;
+}
