@@ -24,8 +24,8 @@ If the mongo commands are added to the path (go [here](https://dangphongvanthanh
 
 If they are not in your PATH or there was trouble adding to the PATH, you can directly use the command as follows (assuming it is installed in the C drive on Windows):
 
-**Windows:** C:"Program Files"\MongoDB\Server\{VERSION_NUMBER}\bin\mongod.exe --dbpath .\mongodb\
-**MacOS/Linux:** {MONGO_INSTALL_LOCATION}/Server/{VERSION_NUMBER}/bin/mongod --dbpath ./mongodb
+**Windows:** C:"Program Files"\MongoDB\Server\VERSION_NUMBER\bin\mongod.exe --dbpath .\mongodb\
+**MacOS/Linux:** {MONGO_INSTALL_LOCATION}/Server/VERSION_NUMBER/bin/mongod --dbpath ./mongodb
 
 4) On another terminal, enter the backend directory and run the command: node index
 
