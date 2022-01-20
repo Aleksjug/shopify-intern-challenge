@@ -73,7 +73,7 @@ exports.view = function (req, res) {
       res.send(err);
     } else {
       res.json({
-        message: "Contact details loading..",
+        message: "Inventory item details loading..",
         data: inventory,
       });
     }
@@ -96,7 +96,7 @@ exports.update = function (req, res) {
           res.json(err);
         } else {
           res.json({
-            message: "Contact Info updated",
+            message: "Inventory Info updated",
             data: inventory,
           });
         }
@@ -117,7 +117,7 @@ exports.delete = function (req, res) {
       } else {
         res.json({
           status: "success",
-          message: "Contact deleted",
+          message: "Inventory item deleted",
           data: inventory,
         });
       }

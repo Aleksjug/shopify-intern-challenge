@@ -3,7 +3,7 @@ import { Table, Button, Modal, Form } from "react-bootstrap";
 import api from "../api/api";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./InventoryPage.css";
-import { CSVLink, CSVDownload } from "react-csv";
+import { CSVLink } from "react-csv";
 
 function InventoryPage() {
   const initialValueState = {
@@ -117,15 +117,11 @@ function InventoryPage() {
     }
   }
 
-  async function exportToCsv() {
-    console.log(csvData);
-  }
-
   return (
     <div>
       {!loading && (
         <div>
-          <h1 className="main-header">Inventory Managment System</h1>
+          <h1 className="main-header">Inventory Management System</h1>
           <Table bordered variant="dark">
             <thead>
               <tr>

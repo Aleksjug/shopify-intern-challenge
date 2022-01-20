@@ -22,7 +22,7 @@ const api = {
     },
 
     getFormattedCSV() {
-      return axios.get(`http://localhost:8080/api/exportcsv`)
+      return axios.get(`${axios.defaults.baseURL}/exportcsv`)
     }
   };
   
