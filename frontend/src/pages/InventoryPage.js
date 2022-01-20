@@ -12,7 +12,6 @@ function InventoryPage() {
     amount: "",
   };
 
-  const [csvData, setCsvData] = useState({});
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [values, setValues] = useState(initialValueState);
@@ -45,16 +44,6 @@ function InventoryPage() {
     try {
       const { data: response } = await api.getAllInventory();
       setData(response);
-    } catch (error) {
-      console.error(error);
-    }
-    try {
-      const { data: response } = await api.getFormattedCSV();
-      setCsvData({
-        filename: "Report.csv",
-        headers: response.data.headers,
-        data: response.data.data,
-      });
     } catch (error) {
       console.error(error);
     }

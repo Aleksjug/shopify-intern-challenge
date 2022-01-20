@@ -18,10 +18,12 @@ Extra feature chosen: Push a button export product data to a CSV
 3) On one terminal, start in the root directory of the repository. Make a new directory called mongodb with 'mkdir mongodb'
 
 If the mongo commands are added to the path (go [here](https://dangphongvanthanh.wordpress.com/2017/06/12/add-mongos-bin-folder-to-the-path-environment-variable/) to see how to add to PATH on Windows, and [here](https://stackoverflow.com/questions/24306398/how-to-add-mongo-commands-to-path-on-mac-osx) on MacOS), follow this guide for starting the database:
+
 **Windows:** mongod --dbpath .\mongodb\
 **MacOS/Linux:** mongod --dbpath ./mongodb
 
 If they are not in your PATH or there was trouble adding to the PATH, you can directly use the command as follows (assuming it is installed in the C drive on Windows):
+
 **Windows:** C:"Program Files"\MongoDB\Server\4.4\bin\mongod.exe --dbpath .\mongodb\
 **MacOS/Linux:** {MONGO_INSTALL_LOCATION}/Server/{VERSION_NUMBER}/bin/mongod --dbpath ./mongodb
 
